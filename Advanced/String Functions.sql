@@ -55,3 +55,11 @@ FROM EmployeeErrors;
 
 SELECT FirstName, UPPER(FirstName)
 FROM EmployeeErrors;
+-----------------------------------------
+
+--Updating the values after using trim
+UPDATE EmployeeErrors
+SET EmployeeID = TRIM(EmployeeID);
+
+SELECT *
+FROM EmployeeErrors;
