@@ -31,7 +31,7 @@ EmployeesPerJob int,
 AvgAge int,
 AvgSalary int);
 
--- Inserting data into temp table 2
+-- Inserting data into temp table 2, temp tables are important to store data in a temporary format for faster retrivals and manipulations.
 INSERT INTO #Temp_Employee2
 SELECT JobTitle, COUNT(JobTitle) , AVG(Age), AVG(Salary)
 FROM EmployeeDemographics
